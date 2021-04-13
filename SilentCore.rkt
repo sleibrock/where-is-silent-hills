@@ -15,6 +15,10 @@
 
 
 (provide Order-of-Games
+         file->name-set
+         set->formatted-string
+         info-print
+         find-all-commons
          )
 
 
@@ -76,11 +80,16 @@
   (define silenthill3 (file->name-set "data/SilentHill3.csv"))
   (define silenthill4 (file->name-set "data/SilentHill4.csv"))
   (define siren       (file->name-set "data/Siren.csv"))
+  (define pt          (file->name-set "data/PTSilentHills.csv"))
+  (define strand      (file->name-set "data/DeathStranding.csv"))
   
+  ; some generic testing that should go into their own programs
   ;(info-print silenthill1 silenthill2)
   ;(info-print silenthill1 siren)
   ;(info-print silenthill2 silenthill3)
-  (find-all-commons silenthill1 silenthill2 silenthill3 silenthill4)
+  ;(find-all-commons silenthill1 silenthill2 silenthill3 silenthill4)
+  ;(find-all-commons pt strand)
+  ;(info-print pt strand)
   )
   
   
